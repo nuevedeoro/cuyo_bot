@@ -160,3 +160,5 @@ bot.on(['/culear'], (msg) => {
 });
 
 bot.on(['/cyc'], (msg) => msg.reply.text(`culiadores y culiados: 'milo', 'salsa', 'gero', 'winnie', 'cass', 'pelado', 'lucio','carina', 'pablo', 'copito','chris', 'enrique', 'pancha', 'vioh','coti'`));
+
+//puto
