@@ -161,4 +161,40 @@ bot.on(['/culear'], (msg) => {
 
 bot.on(['/cyc'], (msg) => msg.reply.text(`culiadores y culiados: 'milo', 'salsa', 'gero', 'winnie', 'cass', 'pelado', 'lucio','carina', 'pablo', 'copito','chris', 'enrique', 'pancha', 'vioh','coti'`));
 
-//puto
+//poner + como string
+bot.on('text', msg => {
+    var texto = msg.text;
+    if (texto == '+') {
+    	bot.sendMessage(msg.reply.text(`TOMA GIL AHORA SE PUEDE PONER +`))
+    };
+});
+
+//traductor
+const translate = require('translate-google')
+
+bot.on(/^\/ingles (.+)$/, (msg, props) => {
+    const text = props.match[1];
+	translate(text, {to: 'en'}).then(res => {
+	    bot.sendMessage(msg.reply.text(`${ res }`,{ asReply: true }))
+	}).catch(err => {
+	    bot.sendMessage(msg.reply.text(`${ err }`,{ asReply: true }))
+	})
+});
+
+bot.on(/^\/espanol (.+)$/, (msg, props) => {
+    const text = props.match[1];
+	translate(text, {to: 'es'}).then(res => {
+	    bot.sendMessage(msg.reply.text(`${ res }`,{ asReply: true }))
+	}).catch(err => {
+	    bot.sendMessage(msg.reply.text(`${ err }`,{ asReply: true }))
+	})
+});
+
+bot.on(/^\/frances (.+)$/, (msg, props) => {
+    const text = props.match[1];
+	translate(text, {to: 'fr'}).then(res => {
+	    bot.sendMessage(msg.reply.text(`${ res }`,{ asReply: true }))
+	}).catch(err => {
+	    bot.sendMessage(msg.reply.text(`${ err }`,{ asReply: true }))
+	})
+});
