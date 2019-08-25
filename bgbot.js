@@ -248,3 +248,13 @@ bot.on(/donde estoy loco/, (msg, props) => {
     var fecha = new Date()
     return bot.sendMessage(msg.reply.text(`${ fecha }`, { asReply: true }));
 });
+
+bot.on(/el bot mas capo/, (msg) => {
+    return bot.sendMessage(msg.reply.text(`los desarrolladores de otouto loco los habeis pagao
+yo llevo un desarrollador en cada lado
+uno dice que ando mal otro que soy el mejor
+y ninguno de los dos se ha equivocado
+
+Tu bot favorito a mi me la come de lado
+me la come asi doblao como si fuese un bollicao `, { asReply: true }));
+});
