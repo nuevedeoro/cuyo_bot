@@ -14,18 +14,6 @@ const bot = new TeleBot({
     }
 });
 */
-/*const bot = new TeleBot({
-    token: '937992821:AAGTOju_M6VL13h37opDrliFnvEFdIE_qZ8',
-    webhook: {
-        // Self-signed certificate:
-        // key: './key.pem',
-        // cert: './cert.pem',
-        url: 'https://cuyobot.herokuapp.com/',
-        host: '0.0.0.0',
-        port: 5000
-    }
-});
-*/
 bot.start();
 
 // ultimo agregado por gero
@@ -174,13 +162,13 @@ bot.on(['/culear'], (msg) => {
 bot.on(['/cyc'], (msg) => msg.reply.text(`culiadores y culiados: 'milo', 'salsa', 'gero', 'winnie', 'cass', 'pelado', 'lucio','carina', 'pablo', 'copito','chris', 'enrique', 'pancha', 'vioh','coti'`));
 
 //poner + como string
-bot.on('text', msg => {
+/*bot.on('text', msg => {
     var texto = msg.text;
     if (texto == '+') {
     	bot.sendMessage(msg.reply.text(`TOMA GIL AHORA SE PUEDE PONER +`))
     };
 });
-
+*/
 //traductor
 const translate = require('translate-google')
 
