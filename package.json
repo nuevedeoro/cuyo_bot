@@ -1,0 +1,23 @@
+{
+  "name": "cuyo_bot",
+  "version": "1.0.0",
+  "description": "Bot Oficial de la Bidet Gang",
+  "main": "bgbot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuevedeoro/cuyo_bot.git"
+  },
+  "author": "nuevedeoro, salsatartara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nuevedeoro/cuyo_bot/issues"
+  },
+  "homepage": "https://github.com/nuevedeoro/cuyo_bot#readme",
+  "dependencies": {
+    "telebot": "^1.2.6",
+    "translate-google": "^1.3.5"
+  }
+}
