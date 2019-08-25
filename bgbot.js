@@ -1,6 +1,6 @@
 const TeleBot = require('telebot');
 
-//const bot = new TeleBot('937992821:AAGTOju_M6VL13h37opDrliFnvEFdIE_qZ8'); //si vas a activar el anti-flood desactiva esta linea
+const bot = new TeleBot('937992821:AAGTOju_M6VL13h37opDrliFnvEFdIE_qZ8'); //si vas a activar el anti-flood desactiva esta linea
 /*
 const bot = new TeleBot({
     token: '937992821:AAGTOju_M6VL13h37opDrliFnvEFdIE_qZ8',
@@ -14,7 +14,7 @@ const bot = new TeleBot({
     }
 });
 */
-const bot = new TeleBot({
+/*const bot = new TeleBot({
     token: '937992821:AAGTOju_M6VL13h37opDrliFnvEFdIE_qZ8',
     webhook: {
         // Self-signed certificate:
@@ -25,7 +25,7 @@ const bot = new TeleBot({
         port: 5000
     }
 });
-
+*/
 bot.start();
 
 // ultimo agregado por gero
