@@ -5,6 +5,7 @@
   "main": "bgbot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bgbot.js"
   },
   "repository": {
     "type": "git",
