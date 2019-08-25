@@ -199,6 +199,42 @@ bot.on(/^\/frances (.+)$/, (msg, props) => {
 	})
 });
 
+bot.on(/^\/aleman (.+)$/, (msg, props) => {
+    const text = props.match[1];
+	translate(text, {to: 'de'}).then(res => {
+	    bot.sendMessage(msg.reply.text(`${ res }`,{ asReply: true }))
+	}).catch(err => {
+	    bot.sendMessage(msg.reply.text(`${ err }`,{ asReply: true }))
+	})
+});
+
+bot.on(/^\/chino (.+)$/, (msg, props) => {
+    const text = props.match[1];
+	translate(text, {to: 'zh-cn'}).then(res => {
+	    bot.sendMessage(msg.reply.text(`${ res }`,{ asReply: true }))
+	}).catch(err => {
+	    bot.sendMessage(msg.reply.text(`${ err }`,{ asReply: true }))
+	})
+});
+
+bot.on(/^\/arabe (.+)$/, (msg, props) => {
+    const text = props.match[1];
+	translate(text, {to: 'ar'}).then(res => {
+	    bot.sendMessage(msg.reply.text(`${ res }`,{ asReply: true }))
+	}).catch(err => {
+	    bot.sendMessage(msg.reply.text(`${ err }`,{ asReply: true }))
+	})
+});
+
+bot.on(/^\/ruso (.+)$/, (msg, props) => {
+    const text = props.match[1];
+	translate(text, {to: 'ru'}).then(res => {
+	    bot.sendMessage(msg.reply.text(`${ res }`,{ asReply: true }))
+	}).catch(err => {
+	    bot.sendMessage(msg.reply.text(`${ err }`,{ asReply: true }))
+	})
+});
+
 bot.on(/que hora es/, (msg, props) => {
     const text = props.match[1];
     var fecha = new Date()
