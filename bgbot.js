@@ -198,3 +198,17 @@ bot.on(/^\/frances (.+)$/, (msg, props) => {
 	    bot.sendMessage(msg.reply.text(`${ err }`,{ asReply: true }))
 	})
 });
+
+bot.on(/que hora es/, (msg, props) => {
+    const text = props.match[1];
+    var fecha = new Date()
+    var hora = fecha.getHours()
+    var minutos = fecha.getMinutes()
+    return bot.sendMessage(msg.reply.text(`${ hora }:${ minutos }`, { asReply: true }));
+});
+
+bot.on(/donde estoy loco/, (msg, props) => {
+    const text = props.match[1];
+    var fecha = new Date()
+    return bot.sendMessage(msg.reply.text(`${ fecha }`, { asReply: true }));
+});
