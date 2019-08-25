@@ -16,6 +16,7 @@ const bot = new TeleBot({
 */
 
 // ultimo agregado por gero
+bot.start();
 
 bot.on('/datodecolor', msg => {
     var usuarios1 = ['milo', 'salsa', 'gero', 'winnie', 'cass', 'el pelado', 'lucio','carina', 'pablo', 'copito','chris', 'enrique', 'pancha', 'vioh','coti'];
