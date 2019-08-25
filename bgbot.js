@@ -20,7 +20,7 @@ const bot = new TeleBot({
         // Self-signed certificate:
         // key: './key.pem',
         // cert: './cert.pem',
-        url: 'https://fathomless-escarpment-53065.herokuapp.com/',
+        url: 'https://cuyobot.herokuapp.com/',
         host: '0.0.0.0',
         port: 5000
     }
