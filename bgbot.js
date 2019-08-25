@@ -14,6 +14,10 @@ const bot = new TeleBot({
     }
 });
 */
+var http = require("http");
+setInterval(function() {
+    http.get("http://cuyobot.herokuapp.com");
+}, 100); // every 5 minutes (300000)
 
 // ultimo agregado por gero
 bot.start();
