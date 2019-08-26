@@ -14,10 +14,7 @@ const bot = new TeleBot({
     }
 });
 */
-const http = require("http");
-setInterval(function() {
-    http.get("http://cuyobot.herokuapp.com");
-}, 100);
+
 // ultimo agregado por gero
 bot.start();
 
