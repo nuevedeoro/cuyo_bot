@@ -1,6 +1,6 @@
 const TeleBot = require('telebot');
 
-const bot = new TeleBot('937992821:AAGTOju_M6VL13h37opDrliFnvEFdIE_qZ8'); //si vas a activar el anti-flood desactiva esta linea
+const bot = new TeleBot('TOKEN'); //si vas a activar el anti-flood desactiva esta linea
 /*
 const bot = new TeleBot({
     token: '937992821:AAGTOju_M6VL13h37opDrliFnvEFdIE_qZ8',
